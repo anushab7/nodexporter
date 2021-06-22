@@ -12,7 +12,9 @@ build:
       
 deploy:
   context: anushab7/DEV
-  replicas: 1    
+  type: node-exporter-ds
+  port:
+  - 9100
     
 properties:
    revision : 49
